@@ -26,7 +26,7 @@ function App() {
   return (
     <AppWrapper>
       <Box>
-        <label>Mensagem para ser Criptografada:</label>
+        <label>Mensagem para ser Criptografada por Sha3_512:</label>
         <InputMsg placeholder="Mensagem a ser criptografada com sha3-512" value={msg} onChange={(e) => setMsg(e.target.value)} />
         <CryptButton onClick={handleClick}>Criptografar</CryptButton>
         {showMsg && <CryptoText>{sha3_512(delayedMsg)}</CryptoText>}
